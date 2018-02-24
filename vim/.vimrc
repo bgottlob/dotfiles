@@ -12,18 +12,24 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'godlygeek/tabular'
+
+"" Language specific plugins
 Plugin 'plasticboy/vim-markdown'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'hallison/vim-rdoc'
+Plugin 'pangloss/vim-javascript'
+Plugin 'elzr/vim-json'
+Plugin 'vim-erlang/vim-erlang-compiler'
+Plugin 'lervag/vimtex'
+Plugin 'mustache/vim-mustache-handlebars'
+
+"" Others
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/tpope-vim-abolish'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'pangloss/vim-javascript'
-Plugin 'elzr/vim-json'
 Plugin 'jpalardy/vim-slime'
 
 " All Plugins must be added before the following line
@@ -82,3 +88,11 @@ cnoremap <C-n> <Down>
 
 " Setup for vim-slime with tmux
 let g:slime_target="tmux"
+
+""" Plugin options
+"" vim-markdown
+" Don't fold sections in markedown files by default
+let g:vim_markdown_folding_disabled=1
+"" vim-erlang
+" Don't compile on saving erlang file every time
+let g:erlang_show_errors=0
