@@ -29,6 +29,7 @@ Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/tpope-vim-abolish'
+Plugin 'tpope/vim-speeddating'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'jpalardy/vim-slime'
 
@@ -86,13 +87,19 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
 
-" Setup for vim-slime with tmux
-let g:slime_target="tmux"
+" Make backspace behave in an expected way
+set backspace=indent,eol,start
 
-""" Plugin options
+" Plugin options
+
 "" vim-markdown
-" Don't fold sections in markedown files by default
+""" Don't fold sections in markedown files by default
 let g:vim_markdown_folding_disabled=1
+
 "" vim-erlang
-" Don't compile on saving erlang file every time
+""" Don't compile on saving erlang file every time
 let g:erlang_show_errors=0
+
+"" vim-slime
+""" Setup for vim-slime with tmux
+let g:slime_target="tmux"
