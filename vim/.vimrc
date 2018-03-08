@@ -22,6 +22,8 @@ Plugin 'elzr/vim-json'
 Plugin 'vim-erlang/vim-erlang-compiler'
 Plugin 'lervag/vimtex'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'elixir-editors/vim-elixir'
+Plugin 'stephpy/vim-yaml'
 
 "" Others
 Plugin 'Valloric/YouCompleteMe'
