@@ -1,0 +1,23 @@
+# Taskwarrior program configuration file.
+data.location=~/.task
+
+# Define the following taskd variables in this file (if syncing with
+# a taskserver):
+# - taskd.certificate
+# - taskd.key
+# - taskd.ca
+# - taskd.server
+# - taskd.credentials
+include ~/.taskdrc
+
+# Make low priority lower than no priority
+uda.priority.values=H,M,,L
+urgency.uda.priority..coefficient=1.8
+urgency.uda.priority.L.coefficient=0
+
+# Create the 'now' custom report
+report.now.description=List of pending and started tasks grouped by urgency
+report.now.columns=id,project,due,description.count,urgency
+report.simple.labels=ID,Proj,Due,Desc,Urg
+report.now.sort=urgency-\/,project+
+report.now.filter=(status:pending or status:started) and -BLOCKED limit:7
