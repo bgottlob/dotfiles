@@ -20,6 +20,8 @@ Plugin 'hallison/vim-rdoc'
 Plugin 'pangloss/vim-javascript'
 Plugin 'elzr/vim-json'
 Plugin 'vim-erlang/vim-erlang-compiler'
+Plugin 'vim-erlang/vim-erlang-runtime'
+Plugin 'vim-erlang/vim-erlang-tags'
 Plugin 'lervag/vimtex'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'elixir-editors/vim-elixir'
@@ -34,6 +36,7 @@ Plugin 'tpope/tpope-vim-abolish'
 Plugin 'tpope/vim-speeddating'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'jpalardy/vim-slime'
+Plugin 'chrisbra/csv.vim'
 
 " All Plugins must be added before the following line
 call vundle#end()           " required
@@ -54,17 +57,15 @@ set nu
 " Set column for 80 character limit per line
 set colorcolumn=81
 " Set the color to one of the terminal theme colors
-highlight ColorColumn ctermbg=1
+highlight ColorColumn ctermbg=Red
 
 " Crosshairs for cursor
 set cursorline
 "set cursorcolumn
 
-" Showing whitespace characters
+" Don't show whitespace characters (uncomment these two lines to change)
 "set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
-" Currently only showing hard tab and trailing spaces
-set listchars=tab:>-,trail:~
-set list
+"set list
 
 " Use unix line endings
 set ff=unix
@@ -97,10 +98,6 @@ set backspace=indent,eol,start
 "" vim-markdown
 """ Don't fold sections in markedown files by default
 let g:vim_markdown_folding_disabled=1
-
-"" vim-erlang
-""" Don't compile on saving erlang file every time
-let g:erlang_show_errors=0
 
 "" vim-slime
 """ Setup for vim-slime with tmux
