@@ -24,3 +24,5 @@ report.now.columns=id,priority,due,description.count,urgency,tags,project
 report.now.labels=ID,P,Due,Desc,Urg,Tags,Proj
 report.now.sort=urgency-\/,project+
 report.now.filter=(status:pending or status:started) and -BLOCKED limit:7
+context.work=+work
+context.home=-work
