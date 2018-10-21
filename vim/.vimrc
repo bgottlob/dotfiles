@@ -25,6 +25,7 @@ Plugin 'vim-erlang/vim-erlang-tags'
 Plugin 'lervag/vimtex'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'elixir-editors/vim-elixir'
+Plugin 'slashmili/alchemist.vim'
 Plugin 'stephpy/vim-yaml'
 
 "" Others
@@ -102,3 +103,5 @@ let g:vim_markdown_folding_disabled=1
 "" vim-slime
 """ Setup for vim-slime with tmux
 let g:slime_target="tmux"
+
+autocmd BufNewFile,BufRead *.ex,*.exs set syntax=elixir
