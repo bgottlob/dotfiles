@@ -104,4 +104,4 @@ let g:vim_markdown_folding_disabled=1
 """ Setup for vim-slime with tmux
 let g:slime_target="tmux"
 
-autocmd BufNewFile,BufRead *.ex,*.exs set syntax=elixir
+autocmd BufNewFile,BufRead *.exs setf elixir
