@@ -38,6 +38,7 @@ Plugin 'tpope/vim-speeddating'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'jpalardy/vim-slime'
 Plugin 'chrisbra/csv.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " All Plugins must be added before the following line
 call vundle#end()           " required
