@@ -29,7 +29,6 @@ Plugin 'slashmili/alchemist.vim'
 Plugin 'stephpy/vim-yaml'
 
 "" Others
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
