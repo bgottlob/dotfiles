@@ -27,6 +27,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'elixir-editors/vim-elixir'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'stephpy/vim-yaml'
+Plugin 'hashivim/vim-terraform'
 
 "" Others
 Plugin 'tpope/vim-sleuth'
@@ -107,3 +108,5 @@ let g:slime_target="tmux"
 au BufRead,BufNewFile *.ex,*.exs set filetype=elixir
 au BufRead,BufNewFile *.eex,*.leex set filetype=eelixir
 au BufRead,BufNewFile mix.lock set filetype=elixir
+
+au BufRead,BufNewFile *.tf set filetype=terraform
