@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+ln -s "$PWD/vim/.vimrc" "$HOME/.vimrc"
+
+VIM_COLORS="$HOME/.vim/colors"
+mkdir -p "$VIM_COLORS"
+ln -s "$PWD/vim/solarized.vim" "$VIM_COLORS/solarized.vim"
+
+git clone 'https://github.com/VundleVim/Vundle.vim.git' "$HOME/.vim/bundle/Vundle.vim"
+vim +PluginInstall +qall
